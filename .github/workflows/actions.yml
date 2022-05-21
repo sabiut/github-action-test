@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: simple Javascript Actions
         id: greetings
-        uses: /actions/test-javascript-hello-action@v1.0
+        uses: adeloyedeji/github-actions-hello@v1.0
         with:
           who-to-greet: world
       - name: Log greetings time
