@@ -7,9 +7,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: List files
-        run: |
-          ls 
+        run: | 
           pwd
+          ls -a
+      - name: check out
+        uses: actions/checkout@v1
+      - name: List files
+        run: |
+          pwd
+          ls -a
       - name: simple Javascript Actions
         id: greetings
         uses: adeloyedeji/github-actions-hello@v1.0
